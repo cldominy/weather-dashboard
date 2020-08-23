@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <!-- Custom Styling -->
+    <link href="./assets/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header -->
+        <div class="jumbotron jumbotron-fluid text-center bg-dark text-light">
+            <div class="container">
+                <h1 class="display-4">Weather Dashboard</h1>
+            </div>
+        </div>
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Search Box + Search Saves -->
+                <div class="col-md-3 search-col">
+                    <h3>Search for a City:</h3>
+                    <!-- Search Bar -->
+                    <div class="input-group mb-3">
+                            <input class="form-control" type="search" placeholder="City Name" aria-label="Search" id="cityInput">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary my-2 my-sm-0 fas fa-search" type="submit" id="searchBttn"></button>
+                            </div>
+                      </div>
+                      <!-- Recent Cities Dynamically Created Here -->
+                      <div class="list-group">
+                        <!-- <a class="list-group-item list-group-item-action">City Name</a> -->
+                      </div>
+                </div>
+            <!-- Displaying Current City Weather Dynamically -->
+            <div class="col-md-9">
+                <div id="currentWeather"></div>
+                    <!-- Dynamically Generated  -->
+                    <div class="card weatherCard">
+                        <div class="card-body">
+                          <h5 class="card-title">City Name (Date) (Weather Icon)</h5>
+                          <p class="card-text">Temperature: 90.9F</p>
+                          <p class="card-text">Humidity: 41%</p>
+                          <p class="card-text">Wind Speed: 4.7 MPH</p>
+                          <p class="card-text">UV Index: <span class="uvVhigh">9.49</span></p> 
+                        </div>
+                      </div>
+                <div id="forecastWeather">
+                    <!-- Dynamically Generated -->
+                    <h4 class="card-header">5 Day Forecast:</h4>
+                    <div class="card-deck">
+                        <div class="card text-white bg-primary">
+                          <div class="card-body">
+                            <h5 class="card-title">8/16/2020</h5>
+                            <div class="fas fa-cloud-showers-heavy"></div>
+                            <p class="card-text">Temp: 98F</p>
+                            <p class="card-text">Humidity: 43%</p>
+                          </div>
+                        </div>
+                        <div class="card text-white bg-primary">
+                          <div class="card-body">
+                            <h5 class="card-title">8/16/2020</h5>
+                            <div class="fas fa-cloud-showers-heavy"></div>
+                            <p class="card-text">Temp: 98F</p>
+                            <p class="card-text">Humidity: 43%</p>
+                          </div>
+                        </div>
+                        <div class="card text-white bg-primary">
+                          <div class="card-body">
+                            <h5 class="card-title">8/16/2020</h5>
+                            <div class="fas fa-cloud-showers-heavy"></div>
+                            <p class="card-text">Temp: 98F</p>
+                            <p class="card-text">Humidity: 43%</p>
+                          </div>
+                        </div>
+                        <div class="card text-white bg-primary">
+                            <div class="card-body">
+                              <h5 class="card-title">8/16/2020</h5>
+                              <div class="fas fa-cloud-showers-heavy"></div>
+                              <p class="card-text">Temp: 98F</p>
+                              <p class="card-text">Humidity: 43%</p>
+                            </div>
+                          </div>
+                          <div class="card text-white bg-primary">
+                            <div class="card-body">
+                              <h5 class="card-title">8/16/2020</h5>
+                              <div class="fas fa-cloud-showers-heavy"></div>
+                              <p class="card-text">Temp: 98F</p>
+                              <p class="card-text">Humidity: 43%</p>
+                            </div>
+                          </div>
+                      </div>
+                      <!-- End trying this stuff out -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Code to the JavaScript File -->
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

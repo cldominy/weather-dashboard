@@ -1,0 +1,22 @@
+.search-col{
+    background-color: rgb(231, 231, 231);
+    height: 100vh;
+    padding-top: 15px;
+}
+
+.jumbotron{
+    margin-bottom: 0px;
+}
+
+.input-group{
+    padding-top: 10px;
+}
+
+.card-header{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.weatherCard{
+    margin-top: 10px;
+}
