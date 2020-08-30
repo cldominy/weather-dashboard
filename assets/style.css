@@ -20,3 +20,38 @@
 .weatherCard{
     margin-top: 10px;
 }
+
+.low{
+    border-radius: 3px;
+    padding: 2px;
+    color: white;
+    background-color: green;
+}
+
+.moderate{
+    border-radius: 3px;
+    padding: 2px;
+    color: black;
+    background-color: yellow;
+}
+
+.high{
+    border-radius: 3px;
+    padding: 2px;
+    color: black;
+    background-color: orange;
+}
+
+.vhigh{
+    border-radius: 3px;
+    padding: 2px;
+    color: white;
+    background-color: red;
+}
+
+.extreme{
+    border-radius: 3px;
+    padding: 2px;
+    color: white;
+    background-color: violet;
+}

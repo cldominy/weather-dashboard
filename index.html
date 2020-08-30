@@ -31,13 +31,13 @@
                     <h3>Search for a City:</h3>
                     <!-- Search Bar -->
                     <div class="input-group mb-3">
-                            <input class="form-control" type="search" placeholder="City Name" aria-label="Search" id="cityInput">
+                            <input class="form-control" type="text" placeholder="City Name" aria-label="Search" id="cityInput">
                             <div class="input-group-append">
                                 <button class="btn btn-primary my-2 my-sm-0 fas fa-search" type="submit" id="searchBttn"></button>
                             </div>
                       </div>
                       <!-- Recent Cities Dynamically Created Here -->
-                      <div class="list-group">
+                      <div class="list-group"  id="cityHistory">
                         <!-- <a class="list-group-item list-group-item-action">City Name</a> -->
                       </div>
                 </div>
@@ -46,19 +46,21 @@
                 <div id="currentWeather"></div>
                     <!-- Dynamically Generated  -->
                     <div class="card weatherCard">
+                      <h4 class="card-header">Current Weather</h4>
                         <div class="card-body">
-                          <h5 class="card-title">City Name (Date) (Weather Icon)</h5>
-                          <p class="card-text">Temperature: 90.9F</p>
-                          <p class="card-text">Humidity: 41%</p>
-                          <p class="card-text">Wind Speed: 4.7 MPH</p>
-                          <p class="card-text">UV Index: <span class="uvVhigh">9.49</span></p> 
+                          <h5 class="card-title" id="cityName"></h5>
+                          <p class="card-text" id="currentTemp"></p>
+                          <p class="card-text" id="currentHumid"></p>
+                          <p class="card-text" id="windCurrent"></p>
+                          <p class="card-text" id="uvIndex"></p> 
                         </div>
                       </div>
+                      <!-- End example -->
                 <div id="forecastWeather">
                     <!-- Dynamically Generated -->
                     <h4 class="card-header">5 Day Forecast:</h4>
-                    <div class="card-deck">
-                        <div class="card text-white bg-primary">
+                    <div class="row card-deck">
+                        <!-- <div class="card text-white bg-primary">
                           <div class="card-body">
                             <h5 class="card-title">8/16/2020</h5>
                             <div class="fas fa-cloud-showers-heavy"></div>
@@ -97,7 +99,7 @@
                               <p class="card-text">Temp: 98F</p>
                               <p class="card-text">Humidity: 43%</p>
                             </div>
-                          </div>
+                          </div> -->
                       </div>
                       <!-- End trying this stuff out -->
                 </div>
@@ -107,6 +109,8 @@
 
     <!-- jQuery JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <!-- Code to the JavaScript File -->
     <script src="./assets/script.js"></script>
 </body>
