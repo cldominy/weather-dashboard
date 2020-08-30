@@ -8,4 +8,4 @@ This website was built using Bootstrap for styling and jQuery to dynamically gen
 
 This website was created to show user's the current date and hour by utilizing moment.js. The current date is displayed at the top and the colors of the time blocks change depending on the current time. Past hours are grey, current hour is red, and future hours are green. 
 
-![Preview of the planner](./static/media/preview.png)
+![Preview of the planner](./static/media/preview.PNG)
