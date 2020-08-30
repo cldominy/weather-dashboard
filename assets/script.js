@@ -135,7 +135,7 @@ $.ajax({
     for (let index = 0; index < forecast.length; index++) {
         if (forecast[index].dt_txt.includes("00:00:00")){
             // Card and Card Body
-            var card = $("<div class='col-sm-2 card text-white bg-primary'>")
+            var card = $("<div class='col-sm-2 card text-white bg-info'>")
             var cardBody = $("<div class='card-body'>")
 
             // Forecast Date
@@ -164,7 +164,6 @@ $.ajax({
 function previousSearch(){
     currentCity = $(this).attr("data-name");
     $(".card-deck").empty()
-    saveCitiesStorage();
     generateWeather();
 }
 

@@ -6,6 +6,19 @@
 
 .jumbotron{
     margin-bottom: 0px;
+    background-image: url("../static/media/bg.jpg");
+    background-size: cover;
+}
+
+.weather-band{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    opacity: 75%;
+}
+
+.display-4{
+    color: rgb(43, 43, 44);
+    font-family: 'Dosis', sans-serif;
 }
 
 .input-group{
@@ -14,6 +27,10 @@
 
 .card-header{
     margin-bottom: 10px;
+    
+}
+
+.forecast{
     margin-top: 10px;
 }
 

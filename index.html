@@ -8,10 +8,8 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     <!-- Custom Styling -->
     <link href="./assets/style.css" rel="stylesheet" />
 </head>
@@ -19,7 +17,7 @@
 <body>
     <!-- Header -->
         <div class="jumbotron jumbotron-fluid text-center bg-dark text-light">
-            <div class="container">
+            <div class="container weather-band">
                 <h1 class="display-4">Weather Dashboard</h1>
             </div>
         </div>
@@ -36,72 +34,30 @@
                                 <button class="btn btn-primary my-2 my-sm-0 fas fa-search" type="submit" id="searchBttn"></button>
                             </div>
                       </div>
-                      <!-- Recent Cities Dynamically Created Here -->
+                      <!-- Search History Dynamically Created -->
                       <div class="list-group"  id="cityHistory">
-                        <!-- <a class="list-group-item list-group-item-action">City Name</a> -->
                       </div>
                 </div>
-            <!-- Displaying Current City Weather Dynamically -->
+            <!-- Current Weather -->
             <div class="col-md-9">
                 <div id="currentWeather"></div>
-                    <!-- Dynamically Generated  -->
+                    <!-- Dynamically Generated Current Weather -->
                     <div class="card weatherCard">
                       <h4 class="card-header">Current Weather</h4>
                         <div class="card-body">
-                          <h5 class="card-title" id="cityName"></h5>
+                          <h3 class="card-title" id="cityName"></h5>
                           <p class="card-text" id="currentTemp"></p>
                           <p class="card-text" id="currentHumid"></p>
                           <p class="card-text" id="windCurrent"></p>
                           <p class="card-text" id="uvIndex"></p> 
                         </div>
                       </div>
-                      <!-- End example -->
+                <!-- Forecast Weather -->
                 <div id="forecastWeather">
-                    <!-- Dynamically Generated -->
-                    <h4 class="card-header">5 Day Forecast:</h4>
+                    <!-- Dynamically Generated Forecast -->
+                    <h4 class="card-header forecast">5 Day Forecast:</h4>
                     <div class="row card-deck">
-                        <!-- <div class="card text-white bg-primary">
-                          <div class="card-body">
-                            <h5 class="card-title">8/16/2020</h5>
-                            <div class="fas fa-cloud-showers-heavy"></div>
-                            <p class="card-text">Temp: 98F</p>
-                            <p class="card-text">Humidity: 43%</p>
-                          </div>
-                        </div>
-                        <div class="card text-white bg-primary">
-                          <div class="card-body">
-                            <h5 class="card-title">8/16/2020</h5>
-                            <div class="fas fa-cloud-showers-heavy"></div>
-                            <p class="card-text">Temp: 98F</p>
-                            <p class="card-text">Humidity: 43%</p>
-                          </div>
-                        </div>
-                        <div class="card text-white bg-primary">
-                          <div class="card-body">
-                            <h5 class="card-title">8/16/2020</h5>
-                            <div class="fas fa-cloud-showers-heavy"></div>
-                            <p class="card-text">Temp: 98F</p>
-                            <p class="card-text">Humidity: 43%</p>
-                          </div>
-                        </div>
-                        <div class="card text-white bg-primary">
-                            <div class="card-body">
-                              <h5 class="card-title">8/16/2020</h5>
-                              <div class="fas fa-cloud-showers-heavy"></div>
-                              <p class="card-text">Temp: 98F</p>
-                              <p class="card-text">Humidity: 43%</p>
-                            </div>
-                          </div>
-                          <div class="card text-white bg-primary">
-                            <div class="card-body">
-                              <h5 class="card-title">8/16/2020</h5>
-                              <div class="fas fa-cloud-showers-heavy"></div>
-                              <p class="card-text">Temp: 98F</p>
-                              <p class="card-text">Humidity: 43%</p>
-                            </div>
-                          </div> -->
                       </div>
-                      <!-- End trying this stuff out -->
                 </div>
             </div>
         </div>
@@ -111,7 +67,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- Moment.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <!-- Code to the JavaScript File -->
+    <!-- Javescript by Me -->
     <script src="./assets/script.js"></script>
 </body>
 
