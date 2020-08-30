@@ -82,7 +82,7 @@ $.ajax({
     var lon = response.coord.lon
     var lat = response.coord.lat
     // API for getting UV index
-    var queryURLuv = `http://api.openweathermap.org/data/2.5/uvi?appid=${apiKey}&lat=${lat}&lon=${lon}`
+    var queryURLuv = `https://api.openweathermap.org/data/2.5/uvi?appid=${apiKey}&lat=${lat}&lon=${lon}`
     $.ajax({
         url: queryURLuv,
         method: "GET"
@@ -91,7 +91,7 @@ $.ajax({
         var currentDate = moment(response.dt, "X").format(" (MM/DD/YYYY)")
         // Creating Weather Icon
         var iconcode = response.weather[0].icon
-        var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+        var iconurl = "https://openweathermap.org/img/w/" + iconcode + ".png";
         var weatherImg = $("<img>").attr("src", iconurl)
 
         // Adding city name, date, and image to card body 
@@ -143,7 +143,7 @@ $.ajax({
             
             // Weather Image
             var iconcodeFor = forecast[index].weather[0].icon
-            var iconurlFor = "http://openweathermap.org/img/w/" + iconcodeFor + ".png";
+            var iconurlFor = "https://openweathermap.org/img/w/" + iconcodeFor + ".png";
             var weatherImgFor = $("<img>").attr("src", iconurlFor)
 
             // Temperature
