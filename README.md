@@ -1,4 +1,4 @@
-# Work Day Planner
+# Weather Dashboard
 
 [Click here to check out the webiste!](https://cldominy.github.io/weather-dashboard/ "Work Day Planner")
 
